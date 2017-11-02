@@ -1,0 +1,19 @@
+https://testpypi.python.org/pypi/vtkrishn/0.1.0
+
+twine upload --repository testpypi dist/*
+
+set home in windows env variable
+[distutils]
+index-servers =
+	pypi
+	testpypi
+	
+[pypi]
+repository:https://upload.pypi.org/legacy/
+username:vtkrishn
+password:password
+
+[testpypi]
+repository: https://test.pypi.org/legacy/
+username: vtkrishn
+password: password
